@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+:root {
+    --primary-color: #214ade;
+
+}
+
+
+.dark {
+    --text-color: #ffffff;
+    --sub-text-color: #cfcfcf;
+    transition: 0.3s;
+
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #000000, #192437);
+    backdrop-filter: blur(10px);
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    width: 100%;
+    padding: 4em;
+    width: calc(100% - 8em);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+.codebell {
+    font-weight: 800;
+    font-size: 1.5em;
+    color: #1585daf6;
+}
+
+.links a {
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.get-the-app{
+    padding: 0.7em 1.5em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    background-color: #fff;
+    color: #000000;
+    border: 0.5px solid #ffff;
+    cursor: pointer;
+}
+
+.hero-section {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.left {
+flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+.left h1 {
+    font-weight: 200;
+    font-size: 2.5em;
+    color: #ffffff;
+   
+}
+
+.left h4 {
+    font-weight: 200;
+    font-size: 1em;
+    color: #b6b1b1;
+    width: 80%;
+}
+
+.two-button {
+    display: flex;
+    gap: 1em;
+}
+
+.button1 {
+    padding: 0.9em 2em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    color: #ffff;
+    border: 0.5px solid #ffff;
+    cursor: pointer;
+}
+
+.button2 {
+    padding: 0.9em 2em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    background-color: #fff;
+    color: #000000;
+    border: 0.5px solid #ffff;
+    cursor: pointer;
+}
+.right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right img {
+    width: 500px;
+    height: 500px;
+}
