@@ -277,6 +277,7 @@ a {
 .heading-1 {
     font-size: 1.9em;
     font-weight: 700;
+    color: #ffffff;
 
 
 
@@ -540,6 +541,167 @@ a {
     font-weight: 600;
 }
 
+/*=================================section6===================================== */
+.section6{
+    padding: 2em;
+    width: calc(90% - 4em);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(360deg, #1d2a40, #000000);
+    backdrop-filter: blur(10px);
+    gap: 2em;
+    color: #dbd8d8;
+    align-items: center;
+    justify-content: center;
+}
+.section6-card-container{
+    display: flex;
+    justify-content: space-between;
+
+}
+.step-number{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.step-number .no{
+    font-size: 2em;
+}
+.line{
+    height: 1px;
+    background-color: #d2d6d7;
+    flex-grow: 1;
+}
+.section6-cards img{
+    width: 30%;
+    margin: auto;
+    height: 60%;
+}
+.section6-cards{
+   width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    gap: 1em;
+}
+.section6-cards .heads-text1{
+font-size: 1.5em;
+font-weight: 600;
+color: #ffff;
+width: 80%;
+margin: auto;
+}
+.section6-cards .heads-text2{
+    font-size: 1em;
+    font-weight:600;
+    color: #c1baba;
+    width: 80%;
+    margin: auto;
+}
+
+/*================================== section7============================ */
+
+.section7{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    gap: 2em;
+}
+.section7 .button2{
+   font-size: 1.5em;
+}
+
+
+
+.section8{
+    padding: 2em;
+    width: calc(90% - 4em);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    background: linear-gradient(180deg, #1d2a40, #000000);
+    backdrop-filter: blur(10px);
+}
+.section8 .section8-left{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1em;
+
+
+}
+.section8-left .heads-text1{
+font-size: 2em;
+align-items: flex-start;
+justify-content: flex-start;
+font-weight: 900;
+
+}
+.section8-left .heads-text2{
+    font-size: 1.5em;
+    align-items: center;
+    color: #c2c5c8f6;
+    
+    }
+    
+.section8-right{
+    width: 50%;
+    margin: auto;
+    display: flex;
+} 
+.section8-right  img{
+    width: 50%;
+} 
+
+/* ====================footer================= */
+
+
+.footer{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 8em;
+    display: flex;
+    justify-content: space-between;
+}
+.links-text a{
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.footer-right,.footer-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.footer-h1{
+    color: #ffffff;
+}
+
+.links-text{
+    display: flex;
+    gap: 4em;
+}
+.links-icons{
+    display: flex;
+color: #ffffff;
+justify-content: end;
+gap: 1em;
+}
+
 
 /* Hide links in mobile view when screen width is less than 1200px */
 @media (max-width: 1200px) {
@@ -559,6 +721,7 @@ a {
 
 
 }
+
 
 @media screen and (max-width: 768px) {
     .nav{
@@ -735,6 +898,57 @@ a {
        
        
     }
+    .section6{
+        text-align: center;
+    }
+    .section6 h2{
+        font-size: 1.2em;
+    }
+    
+    .step-number .no{
+        font-size: 1.2em;
+    }
+    .section6-card-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section7 .button2{
+        font-size: 1em;
+    }
+
+    .section8{
+        flex-direction: column;
+        gap: 2em;
+    }
+    .section8-left .heads-text1{
+        font-size: 1.2em;
+      
+        
+        }
+        .section8-left .heads-text2{
+            font-size: 1em;
+          
+        }
+        .section8-right{
+            width: 100%;
+            margin: auto;
+           
+        }
+
+        .footer{
+            flex-direction: column;
+            gap: 2em;
+            margin-bottom: 4em;
+          
+        }
+        .footer-right{
+            gap: 2em;
+        }
+        .links-text{
+            gap: 1em;
+            font-size: 0.7em;
+        }
+      
    
 
 
@@ -742,6 +956,3 @@ a {
 }
 
 
-
-
-@media screen and (max-width: 475px) {}
