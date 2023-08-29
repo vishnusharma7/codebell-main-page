@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,700&family=Inter:wght@100;700;800&family=Mukta:wght@200;300;400;500&family=Open+Sans:ital@1&family=Poppins:wght@100;200;300;400;500;600&family=Rubik:wght@300;400;500&family=Ubuntu:wght@300&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +10,13 @@ html,
 body {
     width: 100%;
     height: 100%;
-    font-family: sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 :root {
@@ -34,10 +43,13 @@ a {
     text-decoration: none;
 }
 
+
+/* =========================================Navbar============================== */
 .nav {
-    width: 100%;
+    width: 85%;
+    margin: auto;
     padding: 4em;
-    width: calc(100% - 8em);
+    /* width: calc(85% - 8em); */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,11 +68,13 @@ a {
 }
 
 .links a {
+    font-weight: 700;
     color: #ffffff;
     white-space: nowrap;
 }
 
-.get-the-app{
+.get-the-app {
+    font-weight: 700;
     padding: 0.7em 1.5em;
     display: flex;
     align-items: center;
@@ -69,10 +83,11 @@ a {
     color: #000000;
     border: 0.5px solid #ffff;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .hero-section {
-    width: 80%;
+    width: 85%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -81,29 +96,33 @@ a {
 }
 
 .left {
-flex: 1;
+    flex: 1;
     display: flex;
     flex-direction: column;
+    align-items: start;
+    justify-content: center;
     gap: 4em;
 }
 
 .left h1 {
-    font-weight: 200;
-    font-size: 2.5em;
+    font-weight: 400;
+    font-size: 4em;
     color: #ffffff;
-   
+
 }
 
 .left h4 {
-    font-weight: 200;
-    font-size: 1em;
+
+    font-weight: 700;
+    font-size: 1.2em;
     color: #b6b1b1;
     width: 80%;
 }
 
 .two-button {
     display: flex;
-    gap: 1em;
+    width: 100%;
+    gap: 1.5em;
 }
 
 .button1 {
@@ -114,6 +133,8 @@ flex: 1;
     color: #ffff;
     border: 0.5px solid #ffff;
     cursor: pointer;
+    white-space: nowrap;
+    font-weight: 700;
 }
 
 .button2 {
@@ -125,14 +146,224 @@ flex: 1;
     color: #000000;
     border: 0.5px solid #ffff;
     cursor: pointer;
+    white-space: nowrap;
+    font-weight: 700;
 }
-.right{
-    flex: 1;
+
+.right {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .right img {
     width: 500px;
     height: 500px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+}
+
+
+/*=========================================== all section parent ========================= */
+.main-content {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    background-color: rgb(32, 32, 32);
+}
+
+
+/*=============================================== section  1 ====================================== */
+.section1 {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4em;
+    gap: 2em;
+}
+
+.section1 h1 {
+    width: 60%;
+    font-size: 3em;
+    text-align: center;
+    color: rgb(255, 255, 255, 0.8);
+}
+
+.section1 h2 {
+    font-weight: 100;
+    width: 60%;
+    font-size: 1.5em;
+    text-align: center;
+    color: rgb(255, 255, 255, 0.8);
+}
+
+.section1-card {
+    width: 100%;
+    margin: auto;
+}
+
+.section1-card img {
+    width: 100%;
+    height: 50vh;
+}
+
+.section1-card .cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4em;
+    width: calc(100% - 8em);
+    background-color: #232631
+}
+
+.card-details {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    color: #ffffff;
+    width: calc(100% - 2em);
+}
+
+.heading-1 {
+    font-size: 1.9em;
+    font-weight: 700;
+
+
+
+}
+
+.heading-2 {
+
+    color: #c7c7cc;
+    font-size: 1.2em;
+    margin: auto;
+    font-weight: 500;
+}
+
+.box-elem {
+    display: flex;
+
+    margin-top: 4em;
+    border: 1px solid rgb(40, 136, 174);
+    padding: 0.2em;
+    align-items: center;
+    color: #ffffff;
+    background-color: rgba(19, 65, 128, 0.5);
+    justify-content: space-around;
+}
+
+.box-text {
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+
+
+.section2 {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    gap: 2em;
+
+}
+
+.card-list-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #022c36, #192437);
+    backdrop-filter: blur(10px);
+    padding: 4em;
+    gap: 2em;
+    width: calc(100% - 8em);
+}
+
+
+.cards-list-right {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards-list-left {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.cards-detail {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    width: calc(60% - 4em);
+    gap: 2em;
+    align-items: start;
+
+
+}
+
+.cards-list-right img {
+    width: 50%;
+    width: 300px;
+  
+
+}
+.cards-list-left img {
+    width: 300px;
+    
+
+}
+
+.text1 {
+    font-size: 3em;
+
+}
+
+
+.cards-detail .head-elem {
+    display: flex;
+    border: 1px solid rgb(40, 136, 174);
+    padding: 0.2em 1em;
+    align-items: center;
+    color: #ffffff;
+    background-color: rgba(19, 65, 128, 0.5);
+    gap: 2em;
+    margin-bottom: 4em;
+
+}
+
+.text2 {
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 768px) {
+
+    .cards {
+        flex-direction: column;
+    }
+    .cards-list-left{
+        flex-direction: column;
+    }
+    .cards-list-right{
+        flex-direction: column;
+    }
 }
