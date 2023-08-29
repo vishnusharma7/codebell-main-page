@@ -46,10 +46,10 @@ a {
 
 /* =========================================Navbar============================== */
 .nav {
-    width: 85%;
+    width: 90%;
     margin: auto;
     padding: 4em;
-    width: calc(85% - 8em);
+    width: calc(90% - 8em);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -508,10 +508,7 @@ a {
 }
 
 /* ===============================section5================== */
-.nav{
-    padding: 2em;
-    width: calc(100% - 4em);
-}
+
 .section5 {
     padding: 2em;
     width: calc(65% - 4em);
@@ -564,6 +561,10 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+    .nav{
+        padding: 2em;
+        width: calc(100% - 4em);
+    }
     .hero-section {
         flex-direction: column-reverse;
         justify-content: center;
