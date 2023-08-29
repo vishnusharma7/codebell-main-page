@@ -49,7 +49,7 @@ a {
     width: 85%;
     margin: auto;
     padding: 4em;
-    /* width: calc(85% - 8em); */
+    width: calc(85% - 8em);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -150,6 +150,7 @@ a {
     font-weight: 700;
 }
 
+
 .right {
     display: flex;
     align-items: center;
@@ -157,14 +158,37 @@ a {
 }
 
 .right img {
-    width: 500px;
-    height: 500px;
+
+    width: 100%;
+    height: 100%;
+
 }
 
 @media screen and (max-width: 768px) {
     .hero-section {
         flex-direction: column-reverse;
         justify-content: center;
+        gap: 4em;
+    }
+
+    .left {
+        align-items: center;
+    }
+
+    .left h1 {
+        font-size: 3.5em;
+
+        text-align: center;
+    }
+
+    .left h4 {
+
+        text-align: center;
+    }
+
+    .two-button {
+        justify-content: center;
+        align-items: center;
     }
 
 }
@@ -172,33 +196,40 @@ a {
 
 /*=========================================== all section parent ========================= */
 .main-content {
+    margin-top: 4em;
     width: 100%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: rgb(32, 32, 32);
+    gap: 4em;
 }
 
 
 /*=============================================== section  1 ====================================== */
 .section1 {
+
     width: 70%;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 4em;
     gap: 2em;
+    margin-top: 4em;
 }
 
-.section1 h1 {
+.section1 h1,
+.section2 h1 {
     width: 60%;
-    font-size: 3em;
+    font-size: 4vw;
     text-align: center;
     color: rgb(255, 255, 255, 0.8);
 }
 
-.section1 h2 {
+.section1 h2,
+.section2 h2 {
     font-weight: 100;
     width: 60%;
     font-size: 1.5em;
@@ -251,15 +282,18 @@ a {
 }
 
 .box-elem {
+    width: 100%;
     display: flex;
 
     margin-top: 4em;
     border: 1px solid rgb(40, 136, 174);
-    padding: 0.2em;
+
+
     align-items: center;
     color: #ffffff;
+    justify-content: center;
     background-color: rgba(19, 65, 128, 0.5);
-    justify-content: space-around;
+    gap: 1em;
 }
 
 .box-text {
@@ -296,6 +330,9 @@ a {
 }
 
 
+.head-elem, .bottom-elem{
+    align-self: flex-start;
+}
 .cards-list-right {
     width: 100%;
     display: flex;
@@ -306,34 +343,45 @@ a {
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    gap: 5em;
 }
 
 .cards-detail {
-    width: 60%;
+   width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 2em;
-    width: calc(60% - 4em);
+   
     gap: 2em;
-    align-items: start;
+    align-items: center;
+    justify-content: center;
 
 
 }
+
+
 
 .cards-list-right img {
     width: 50%;
     width: 300px;
-  
+
 
 }
+
 .cards-list-left img {
     width: 300px;
-    
 
+
+}
+
+.bottom-elem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: flex-start;
 }
 
 .text1 {
+    font-weight: 900;
     font-size: 3em;
 
 }
@@ -356,14 +404,96 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+    .section1 {
+        width: 90%;
+        margin: auto;
+        margin-top: 4em;
+    }
+
+    .section1-card img {
+        width: 100%;
+        height: 20vh;
+    }
+
+    .section2 {
+        width: 90%;
+        margin: auto;
+    }
 
     .cards {
         flex-direction: column;
     }
-    .cards-list-left{
+
+    .cards-list-left {
         flex-direction: column;
+        align-items: center;
     }
-    .cards-list-right{
+
+    .cards-list-right {
+        
         flex-direction: column;
+        align-items: center;
     }
+    .card-details{
+        align-items: center;
+    }
+    
+
+}
+
+/* Initial hiding of the mobile links popup */
+.menu-popup {
+    display: none;
+    position: absolute;
+    top: 90px;
+    /* Adjust the top position as needed */
+    right: 0;
+    /* Display the popup at the right of the button */
+    background: linear-gradient(135deg, #000000, #192437);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 1em;
+    gap: 1em;
+    margin: auto;
+    border-radius: 1em;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-popup a {
+    color: #fff;
+}
+
+.menu-popup .get-the-app {
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+/* Display mobile links popup when menu-toolbar-mobile is clicked */
+.menu-toolbar-mobile.clicked~.menu-popup {
+    display: flex;
+}
+
+/* Style for the mobile toolbar */
+.menu-toolbar-mobile {
+    color: #fff;
+    display: none;
+    cursor: pointer;
+    transition: all ease 1s;
+
+}
+
+/* Hide links in mobile view when screen width is less than 1200px */
+@media (max-width: 1200px) {
+    .links {
+        display: none;
+    }
+
+    .menu-toolbar-mobile {
+        display: flex;
+    }
+
+
 }
