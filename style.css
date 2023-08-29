@@ -168,7 +168,7 @@ a {
 .menu-popup {
     display: none;
     position: absolute;
-    top: 90px;
+    top: 3.5em;
     right: 0;
     background: linear-gradient(135deg, #000000, #192437);
     backdrop-filter: blur(10px);
@@ -508,6 +508,10 @@ a {
 }
 
 /* ===============================section5================== */
+.nav{
+    padding: 2em;
+    width: calc(100% - 4em);
+}
 .section5 {
     padding: 2em;
     width: calc(65% - 4em);
