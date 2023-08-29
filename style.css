@@ -164,34 +164,6 @@ a {
 
 }
 
-@media screen and (max-width: 768px) {
-    .hero-section {
-        flex-direction: column-reverse;
-        justify-content: center;
-        gap: 4em;
-    }
-
-    .left {
-        align-items: center;
-    }
-
-    .left h1 {
-        font-size: 3.5em;
-
-        text-align: center;
-    }
-
-    .left h4 {
-
-        text-align: center;
-    }
-
-    .two-button {
-        justify-content: center;
-        align-items: center;
-    }
-
-}
 
 
 /*=========================================== all section parent ========================= */
@@ -257,12 +229,14 @@ a {
 }
 
 .card-details {
+    width: 100%;
     padding: 1em;
+    width: calc(100% - 2em);
     display: flex;
     flex-direction: column;
     gap: 2em;
     color: #ffffff;
-    width: calc(100% - 2em);
+    
 }
 
 .heading-1 {
@@ -277,18 +251,14 @@ a {
 
     color: #c7c7cc;
     font-size: 1.2em;
-    margin: auto;
     font-weight: 500;
 }
 
 .box-elem {
     width: 100%;
     display: flex;
-
     margin-top: 4em;
     border: 1px solid rgb(40, 136, 174);
-
-
     align-items: center;
     color: #ffffff;
     justify-content: center;
@@ -303,7 +273,7 @@ a {
     font-size: 0.9em;
 }
 
-
+/* ===========================section2================== */
 
 .section2 {
     width: 70%;
@@ -330,7 +300,9 @@ a {
 }
 
 
+
 .head-elem, .bottom-elem{
+   
     align-self: flex-start;
 }
 .cards-list-right {
@@ -350,10 +322,10 @@ a {
    width: 100%;
     display: flex;
     flex-direction: column;
-   
     gap: 2em;
     align-items: center;
     justify-content: center;
+    
 
 
 }
@@ -387,14 +359,16 @@ a {
 }
 
 
-.cards-detail .head-elem {
+.head-elem {
+    width: 100% auto;
+    align-items: center;
+    justify-content: center;
     display: flex;
     border: 1px solid rgb(40, 136, 174);
-    padding: 0.2em 1em;
     align-items: center;
     color: #ffffff;
     background-color: rgba(19, 65, 128, 0.5);
-    gap: 2em;
+    gap: 1em;
     margin-bottom: 4em;
 
 }
@@ -403,52 +377,11 @@ a {
     font-size: 1.2em;
 }
 
-@media screen and (max-width: 768px) {
-    .section1 {
-        width: 90%;
-        margin: auto;
-        margin-top: 4em;
-    }
-
-    .section1-card img {
-        width: 100%;
-        height: 20vh;
-    }
-
-    .section2 {
-        width: 90%;
-        margin: auto;
-    }
-
-    .cards {
-        flex-direction: column;
-    }
-
-    .cards-list-left {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cards-list-right {
-        
-        flex-direction: column;
-        align-items: center;
-    }
-    .card-details{
-        align-items: center;
-    }
-    
-
-}
-
-/* Initial hiding of the mobile links popup */
 .menu-popup {
     display: none;
     position: absolute;
     top: 90px;
-    /* Adjust the top position as needed */
     right: 0;
-    /* Display the popup at the right of the button */
     background: linear-gradient(135deg, #000000, #192437);
     backdrop-filter: blur(10px);
     align-items: center;
@@ -471,12 +404,7 @@ a {
     border-radius: 0.5em;
 }
 
-/* Display mobile links popup when menu-toolbar-mobile is clicked */
-.menu-toolbar-mobile.clicked~.menu-popup {
-    display: flex;
-}
 
-/* Style for the mobile toolbar */
 .menu-toolbar-mobile {
     color: #fff;
     display: none;
@@ -496,4 +424,127 @@ a {
     }
 
 
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 4em;
+    }
+
+    .left {
+        align-items: center;
+    }
+
+    .left h1 {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .left h4 {
+        text-align: center;
+    }
+
+    .two-button {
+        justify-content: center;
+        align-items: center;
+    }
+    .section1-card img {
+        width: 100%;
+        height: 20vh;
+    }
+    .section1 {
+        width: 90%;
+        margin: auto;
+        margin-top: 4em;
+    }
+    .section2 {
+        width: 90%;
+        margin: auto;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .cards-list-left,.cards-list-right  {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .card-details{
+        align-items: center;
+    }
+
+    .section1 h1,.section2 h1{
+        font-size: 2.1em;
+        width: 100%;
+    }
+    .section1 h2, .section2 h2{
+        font-size: 1.3em;
+        width: 100%;
+    }
+    .section1 .cards, .card-list-container{
+        padding: 2em;
+        width: calc(100% - 4em);
+        gap: 2em;
+    }
+    .card-details{
+        width: 100%;
+        padding: 0;
+        gap: 1em;
+    }
+    .box-elem{
+        margin-top: 1em;
+    }
+    .heading-1,.text1{
+        width: 100%;
+        font-size: 1.8em;
+    }
+    .heading-2,.text2{
+        width: 100%;
+        font-size: 1em;
+    }
+   .card-list-container{
+    gap: 3em;
+   }
+   .cards-list-right, .cards-list-left{
+    gap: 2em;
+   }
+  
+
+   .cards-detail{
+    text-align: center;
+    gap: 1em;
+   }
+   .cards-detail .head-elem{
+    width: 100%;
+    margin-bottom: 1em;
+ 
+   }
+
+}
+
+
+
+
+@media screen and (max-width: 475px) {
+    .left {
+        gap: 1.5em;
+        align-items: center;
+    }
+    .left h1 {
+        font-size: 2.2em;
+        text-align: center;
+    }
+    .left h4 {
+        width: 100%;
+        text-align: center;
+    }
+    .button1,.button2{
+        padding: 0.5em;
+    }
+   
+   
 }
