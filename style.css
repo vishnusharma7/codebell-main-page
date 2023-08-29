@@ -164,6 +164,43 @@ a {
 
 }
 
+/* menu-hide-top-right */
+.menu-popup {
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    background: linear-gradient(135deg, #000000, #192437);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 1em;
+    gap: 1em;
+    margin: auto;
+    border-radius: 1em;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-popup a {
+    color: #fff;
+}
+
+.menu-popup .get-the-app {
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+
+.menu-toolbar-mobile {
+    color: #fff;
+    display: none;
+    cursor: pointer;
+    transition: all ease 1s;
+
+}
+
 
 
 /*=========================================== all section parent ========================= */
@@ -192,16 +229,14 @@ a {
     margin-top: 4em;
 }
 
-.section1 h1,
-.section2 h1 {
+.section-h1 {
     width: 60%;
     font-size: 4vw;
     text-align: center;
     color: rgb(255, 255, 255, 0.8);
 }
 
-.section1 h2,
-.section2 h2 {
+.section-h2 {
     font-weight: 100;
     width: 60%;
     font-size: 1.5em;
@@ -236,7 +271,7 @@ a {
     flex-direction: column;
     gap: 2em;
     color: #ffffff;
-    
+
 }
 
 .heading-1 {
@@ -299,12 +334,12 @@ a {
     width: calc(100% - 8em);
 }
 
+.head-elem,
+.bottom-elem {
 
-
-.head-elem, .bottom-elem{
-   
     align-self: flex-start;
 }
+
 .cards-list-right {
     width: 100%;
     display: flex;
@@ -319,13 +354,13 @@ a {
 }
 
 .cards-detail {
-   width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 2em;
     align-items: center;
     justify-content: center;
-    
+
 
 
 }
@@ -377,41 +412,133 @@ a {
     font-size: 1.2em;
 }
 
-.menu-popup {
-    display: none;
-    position: absolute;
-    top: 90px;
-    right: 0;
-    background: linear-gradient(135deg, #000000, #192437);
-    backdrop-filter: blur(10px);
-    align-items: center;
-    border: 1px solid #ccc;
-    padding: 1em;
-    gap: 1em;
+/* =============================================section3========================================== */
+.section3 {
+    width: 70%;
     margin: auto;
-    border-radius: 1em;
-    z-index: 1000;
     display: flex;
     flex-direction: column;
-}
-
-.menu-popup a {
-    color: #fff;
-}
-
-.menu-popup .get-the-app {
-    padding: 0.5em;
-    border-radius: 0.5em;
-}
-
-
-.menu-toolbar-mobile {
-    color: #fff;
-    display: none;
-    cursor: pointer;
-    transition: all ease 1s;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    gap: 2em;
 
 }
+
+.section3 h1 {
+    width: 80%;
+}
+
+.section3-card {
+    display: flex;
+    gap: 1em;
+}
+
+.section3-card-content {
+    width: 100%;
+    padding: 4em;
+    width: calc(100% - 16em);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1em;
+}
+
+.text-head {
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.text-2 {
+    width: 80%;
+
+    font-size: 1em;
+}
+
+/*================================== section4======================== */
+
+.section4 {
+    width: 80%;
+    margin: auto;
+    background: linear-gradient(360deg, #1d2a40, #000000);
+    backdrop-filter: blur(50px);
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    width: calc(80% - 4em);
+}
+
+.section4 .head-elem {
+    margin-bottom: 0;
+
+}
+
+.left-part {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.section4 h1,
+.section4 h2 {
+    color: rgb(255, 255, 255, 0.8);
+}
+
+.section4 h1 {
+    font-size: 3em;
+}
+
+.section4 h2 {
+    font-size: 4em;
+}
+
+.left-part h2 span {
+    font-size: 0.5em;
+
+}
+
+.left-part h4 {
+    font-size: 2em;
+    color: #ffff;
+}
+
+.left-part h4 span {
+    color: #767985;
+
+}
+
+/* ===============================section5================== */
+.section5 {
+    padding: 2em;
+    width: calc(65% - 4em);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #27263f, #0e0e0e);
+    backdrop-filter: blur(10px);
+    gap: 2em;
+    color: #dbd8d8;
+}
+.card-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.section5-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.section5-card-content{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    color: rgb(255, 255, 255,0.5);
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
 
 /* Hide links in mobile view when screen width is less than 1200px */
 @media (max-width: 1200px) {
@@ -422,6 +549,12 @@ a {
     .menu-toolbar-mobile {
         display: flex;
     }
+
+    .section3-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
 
 
 }
@@ -450,15 +583,18 @@ a {
         justify-content: center;
         align-items: center;
     }
+
     .section1-card img {
         width: 100%;
         height: 20vh;
     }
+
     .section1 {
         width: 90%;
         margin: auto;
         margin-top: 4em;
     }
+
     .section2 {
         width: 90%;
         margin: auto;
@@ -468,83 +604,139 @@ a {
         flex-direction: column;
     }
 
-    .cards-list-left,.cards-list-right  {
-        flex-direction: column;
-        align-items: center;
-    }
- 
-    .card-details{
-        align-items: center;
-    }
-
-    .section1 h1,.section2 h1{
-        font-size: 2.1em;
-        width: 100%;
-    }
-    .section1 h2, .section2 h2{
-        font-size: 1.3em;
-        width: 100%;
-    }
-    .section1 .cards, .card-list-container{
-        padding: 2em;
-        width: calc(100% - 4em);
-        gap: 2em;
-    }
-    .card-details{
-        width: 100%;
-        padding: 0;
-        gap: 1em;
-    }
-    .box-elem{
-        margin-top: 1em;
-    }
-    .heading-1,.text1{
-        width: 100%;
-        font-size: 1.8em;
-    }
-    .heading-2,.text2{
-        width: 100%;
-        font-size: 1em;
-    }
-   .card-list-container{
-    gap: 3em;
-   }
-   .cards-list-right, .cards-list-left{
-    gap: 2em;
-   }
-  
-
-   .cards-detail{
-    text-align: center;
-    gap: 1em;
-   }
-   .cards-detail .head-elem{
-    width: 100%;
-    margin-bottom: 1em;
- 
-   }
-
-}
-
-
-
-
-@media screen and (max-width: 475px) {
     .left {
         gap: 1.5em;
         align-items: center;
     }
+
     .left h1 {
         font-size: 2.2em;
         text-align: center;
     }
+
     .left h4 {
         width: 100%;
         text-align: center;
     }
-    .button1,.button2{
+
+    .button1,
+    .button2 {
         padding: 0.5em;
     }
+
+    .cards-list-left,
+    .cards-list-right {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-details {
+        align-items: center;
+    }
+
+    .section-h1,
+    .section4 h1 {
+        font-size: 2.1em;
+        width: 100%;
+    }
+
+    .section-h2,
+    .section4 h4 {
+        font-size: 1.3em;
+        width: 100%;
+    }
+
+    .section1 .cards,
+    .card-list-container {
+        padding: 2em;
+        width: calc(100% - 4em);
+        gap: 2em;
+    }
+
+    .card-details {
+        width: 100%;
+        padding: 0;
+        gap: 1em;
+    }
+
+    .box-elem {
+        margin-top: 1em;
+    }
+
+    .heading-1,
+    .text1 {
+        width: 100%;
+        font-size: 1.8em;
+    }
+
+    .heading-2,
+    .text2 {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .card-list-container {
+        gap: 3em;
+    }
+
+    .cards-list-right,
+    .cards-list-left {
+        gap: 2em;
+    }
+
+
+    .cards-detail {
+        text-align: center;
+        gap: 1em;
+    }
+
+    .cards-detail .head-elem {
+        width: 100%;
+        margin-bottom: 1em;
+
+    }
+
+    .section3-card-content {
+        padding: 1em;
+        width: calc(100% - 2em);
+        align-items: center;
+        text-align: center;
+    }
+
+    .section4 {
+        flex-direction: column;
+        gap: 2em;
+        text-align: center;
+
+    }
+
+    .section4 .head-elem {
+        font-size: 0.6em;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+   .section5{
+    width: calc(80% - 4em);
+    text-align: center;
+   }
+    .card-wrap{
+        gap: 1em;
+    }
+    .section5-card{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2em;
+       
+       
+    }
    
-   
+
+
+
 }
+
+
+
+
+@media screen and (max-width: 475px) {}
