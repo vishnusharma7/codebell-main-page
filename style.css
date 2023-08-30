@@ -271,7 +271,6 @@ a {
 .section1-card .cards {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     padding: 4em;
     width: calc(100% - 8em);
     background-color: #232631
@@ -292,6 +291,7 @@ a {
     font-size: 1.9em;
     font-weight: 700;
     color: #ffffff;
+    margin: auto;
 
 
 
@@ -302,6 +302,7 @@ a {
     color: #c7c7cc;
     font-size: 1.2em;
     font-weight: 500;
+    margin: auto;
 }
 
 .box-elem {
@@ -384,14 +385,15 @@ a {
 
 .cards-list-right img {
     width: 50%;
-    width: 300px;
+   height: 50%;
 
 
 }
 
 .cards-list-left img {
-    width: 300px;
-
+   
+    width: 50%;
+    height: 50%;
 
 }
 
@@ -481,6 +483,8 @@ a {
     justify-content: space-between;
     padding: 2em;
     width: calc(80% - 4em);
+    justify-content: center;
+    align-items: center;
 }
 
 .section4 .head-elem {
@@ -489,9 +493,17 @@ a {
 }
 
 .left-part {
+  
     display: flex;
     flex-direction: column;
     gap: 2em;
+   
+}
+.section4 img{
+  
+   width: 80%;
+   height: 80%;
+
 }
 
 .section4 h1,
@@ -718,19 +730,57 @@ gap: 1em;
 
 
 /* Hide links in mobile view when screen width is less than 1200px */
+
+@media (max-width: 1525px){
+    .section1 .cards{
+       
+        padding: 1em;
+        width: calc(100% - 2em);
+    }
+    .section1-card img {
+        width: 100%;
+        height: 30vh;
+    }
+   
+
+}
 @media (max-width: 1200px) {
     .links {
         display: none;
+    }
+    .section1-card img {
+        width: 100%;
+        height: 25vh;
     }
 
     .menu-toolbar-mobile {
         display: flex;
     }
 
-    .section3-card {
-        flex-direction: column;
+    .section3-card .section3-card-content{
+        padding: 1em;
+        width: calc(100% - 2em);
+        
+    }
+    .card-details{
         align-items: center;
     }
+    .section4{
+        flex-direction: column;
+    }
+    .section1 .cards{
+        flex-direction: column;
+    }
+    .text1{
+        font-size: 1.5em;
+    }
+    .text2{
+        font-size: 1em;
+    }
+    .cards-list-left,.cards-list-right{
+        gap: 2em;
+    }
+
 
 
 
@@ -814,7 +864,9 @@ gap: 1em;
 
     .card-details {
         align-items: center;
+       
     }
+    
 
     .section-h1,
     .section4 h1 {
@@ -839,6 +891,9 @@ gap: 1em;
         width: 100%;
         padding: 0;
         gap: 1em;
+    }
+    .bottom-elem{
+        width: 100%;
     }
 
     .box-elem {
@@ -876,6 +931,9 @@ gap: 1em;
         width: 100%;
         margin-bottom: 1em;
 
+    }
+     .section3-card{
+        flex-direction: column;
     }
 
     .section3-card-content {
