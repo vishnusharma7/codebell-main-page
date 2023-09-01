@@ -295,7 +295,7 @@ a {
 .heading-1 {
     font-size: 1.9em;
     font-weight: 700;
-    color: #ffffff;
+    color: var(--text-color);
     margin: auto;
 
 
@@ -316,7 +316,7 @@ a {
     margin-top: 2em;
     border: 1px solid rgb(40, 136, 174);
     align-items: center;
-    color: #ffffff;
+    color: var(--text-color);
     justify-content: center;
     background-color: #0f2230;
     gap: 1em;
@@ -340,7 +340,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #ffff;
+    color: var(--text-color);
     gap: 2em;
 
 }
@@ -428,7 +428,7 @@ a {
     display: flex;
     border: 1px solid rgb(40, 136, 174);
     align-items: center;
-    color: #ffffff;
+    color: var(--text-color);
     background-color: rgba(19, 65, 128, 0.5);
     gap: 1em;
     padding: 0.3em 1.2em;
@@ -455,7 +455,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #ffff;
+    color:var(--text-color);
     gap: 2em;
 
 }
@@ -532,7 +532,7 @@ a {
 
 .section4 h1,
 .section4 h2 {
-    color: rgb(255, 255, 255, 0.8);
+    color: var(--text-color);
 }
 
 .section4 h1 {
@@ -554,7 +554,7 @@ a {
 }
 
 .left-part h4 span {
-    color: #767985;
+    color: var(--sub-text-color);
 
 }
 
@@ -569,7 +569,7 @@ a {
     background: linear-gradient(135deg, #222222, #131313);
     backdrop-filter: blur(10px);
     gap: 2em;
-    color: #dbd8d8;
+    color:var(--text-color);
 }
 
 .card-wrap {
@@ -604,7 +604,7 @@ a {
     background: linear-gradient(90deg, #193149, #150f08);
     backdrop-filter: blur(10px);
     gap: 2em;
-    color: #dbd8d8;
+    color: var(--text-color);
     align-items: center;
     justify-content: center;
 }
@@ -654,7 +654,7 @@ a {
 .section6-cards .heads-text1 {
     font-size: 1.5em;
     font-weight: 600;
-    color: #ffff;
+    color: var(--text-color);
     width: 80%;
     margin: auto;
 }
@@ -677,7 +677,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #ffff;
+    color: var(--text-color);
     gap: 2em;
 }
 
@@ -693,7 +693,7 @@ a {
     margin: auto;
     display: flex;
     align-items: center;
-    color: #ffffff;
+    color: var(--text-color);
     background: linear-gradient(0deg, #193149, #150f08);
     backdrop-filter: blur(10px);
 }
