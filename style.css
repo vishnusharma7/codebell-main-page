@@ -36,8 +36,8 @@ body {
 
 :root {
     --primary-color: #214ade;
-    --text-color: #ffffff;
-    --sub-text-color: #aba6a6;
+    --text-color: #e7e7e5;
+    --sub-text-color: #c2c2c2;
 
 }
 
@@ -230,7 +230,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(32, 32, 32);
+    background-color: #161712;
     gap: 4em;
 }
 
@@ -278,7 +278,7 @@ a {
     display: flex;
     padding: 4em;
     width: calc(100% - 8em);
-    background-color: #232631
+    background-color: #1b1b1b;
 }
 
 .card-details {
@@ -318,7 +318,7 @@ a {
     align-items: center;
     color: #ffffff;
     justify-content: center;
-    background-color: rgba(7, 37, 79, 0.5);
+    background-color: #0f2230;
     gap: 1em;
     padding: 0.1em;
     width: calc(100% - 0.2em);
@@ -350,7 +350,7 @@ a {
     margin: auto;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(135deg, #022c36, #192437);
+    background: linear-gradient(135deg, #0c1a27, #232323);
     backdrop-filter: blur(10px);
     padding: 4em;
     gap: 2em;
@@ -500,7 +500,7 @@ a {
 .section4 {
     width: 80%;
     margin: auto;
-    background: linear-gradient(360deg, #1d2a40, #000000);
+    background: linear-gradient(300deg, #1d3e5d, #150f08);
     backdrop-filter: blur(50px);
     display: flex;
     justify-content: space-between;
@@ -566,7 +566,7 @@ a {
     margin: auto;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(135deg, #27263f, #0e0e0e);
+    background: linear-gradient(135deg, #222222, #131313);
     backdrop-filter: blur(10px);
     gap: 2em;
     color: #dbd8d8;
@@ -601,7 +601,7 @@ a {
     margin: auto;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(360deg, #1d2a40, #000000);
+    background: linear-gradient(90deg, #193149, #150f08);
     backdrop-filter: blur(10px);
     gap: 2em;
     color: #dbd8d8;
@@ -694,7 +694,7 @@ a {
     display: flex;
     align-items: center;
     color: #ffffff;
-    background: linear-gradient(180deg, #1d2a40, #000000);
+    background: linear-gradient(0deg, #193149, #150f08);
     backdrop-filter: blur(10px);
 }
 
