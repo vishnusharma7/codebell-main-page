@@ -18,6 +18,7 @@ body {
     font-family: 'Rubik', sans-serif;
     font-family: 'Ubuntu', sans-serif;
 }
+
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -35,12 +36,14 @@ body {
 
 :root {
     --primary-color: #214ade;
+    --text-color: #ffffff;
+    --sub-text-color: #aba6a6;
 
 }
 
 
 .dark {
-    --text-color: #ffffff;
+    --text-color: #c9c8c8;
     --sub-text-color: #cfcfcf;
     transition: 0.3s;
 
@@ -49,7 +52,7 @@ body {
 .hero {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(135deg, #000000, #192437);
+    background: linear-gradient(135deg, #000000, rgba(13, 42, 91, 0.951));
     backdrop-filter: blur(10px);
 }
 
@@ -60,10 +63,9 @@ a {
 
 /* =========================================Navbar============================== */
 .nav {
-    width: 90%;
+    width: 85%;
     margin: auto;
-    padding: 4em;
-    width: calc(90% - 8em);
+    padding: 4em 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -107,10 +109,11 @@ a {
     align-items: center;
     justify-content: center;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .left {
-    flex: 1;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -119,9 +122,9 @@ a {
 }
 
 .left h1 {
-    font-weight: 400;
+    font-weight: 900;
     font-size: 4em;
-    color: #ffffff;
+    color: var(--text-color);
 
 }
 
@@ -129,7 +132,7 @@ a {
 
     font-weight: 700;
     font-size: 1.2em;
-    color: #b6b1b1;
+    color: var(--sub-text-color);
     width: 80%;
 }
 
@@ -166,6 +169,7 @@ a {
 
 
 .right {
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,8 +177,9 @@ a {
 
 .right img {
 
-    width: 100%;
-    height: 100%;
+    width: 70%;
+
+
 
 }
 
@@ -198,7 +203,7 @@ a {
 }
 
 .menu-popup a {
-    color: #fff;
+    color: var(--text-color);
 }
 
 .menu-popup .get-the-app {
@@ -208,7 +213,7 @@ a {
 
 
 .menu-toolbar-mobile {
-    color: #fff;
+    color: var(--text-color);
     display: none;
     cursor: pointer;
     transition: all ease 1s;
@@ -244,18 +249,18 @@ a {
 }
 
 .section-h1 {
-    width: 60%;
-    font-size: 4vw;
+    width: 70%;
+    font-size: 3.5em;
     text-align: center;
-    color: rgb(255, 255, 255, 0.8);
+    color: var(--text-color);
 }
 
 .section-h2 {
     font-weight: 100;
-    width: 60%;
+    width: 50%;
     font-size: 1.5em;
     text-align: center;
-    color: rgb(255, 255, 255, 0.8);
+    color: var(--sub-text-color);
 }
 
 .section1-card {
@@ -278,12 +283,12 @@ a {
 
 .card-details {
     width: 100%;
-    padding: 1em;
-    width: calc(100% - 2em);
+    padding: 2em;
+    width: calc(100% - 4em);
     display: flex;
     flex-direction: column;
     gap: 2em;
-    color: #ffffff;
+    color: var(--text-color);
 
 }
 
@@ -299,7 +304,7 @@ a {
 
 .heading-2 {
 
-    color: #c7c7cc;
+    color: var(--sub-text-color);
     font-size: 1.2em;
     font-weight: 500;
     margin: auto;
@@ -308,20 +313,22 @@ a {
 .box-elem {
     width: 100%;
     display: flex;
-    margin-top: 4em;
+    margin-top: 2em;
     border: 1px solid rgb(40, 136, 174);
     align-items: center;
     color: #ffffff;
     justify-content: center;
-    background-color: rgba(19, 65, 128, 0.5);
+    background-color: rgba(7, 37, 79, 0.5);
     gap: 1em;
+    padding: 0.1em;
+    width: calc(100% - 0.2em);
 }
 
 .box-text {
     text-transform: uppercase;
     white-space: nowrap;
-    font-weight: 500;
-    font-size: 0.9em;
+    font-weight: 900;
+    font-size: 0.8em;
 }
 
 /* ===========================section2================== */
@@ -360,6 +367,7 @@ a {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 5em;
 }
 
 .cards-list-left {
@@ -374,8 +382,8 @@ a {
     display: flex;
     flex-direction: column;
     gap: 2em;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
 
 
 
@@ -385,13 +393,13 @@ a {
 
 .cards-list-right img {
     width: 50%;
-   height: 50%;
+    height: 50%;
 
 
 }
 
 .cards-list-left img {
-   
+
     width: 50%;
     height: 50%;
 
@@ -406,7 +414,9 @@ a {
 
 .text1 {
     font-weight: 900;
-    font-size: 3em;
+    font-size: 2.5em;
+    color: var(--text-color);
+    margin-bottom: 0.4em;
 
 }
 
@@ -421,12 +431,20 @@ a {
     color: #ffffff;
     background-color: rgba(19, 65, 128, 0.5);
     gap: 1em;
-    margin-bottom: 4em;
+    padding: 0.3em 1.2em;
+    margin-bottom: 2.7em;
+
 
 }
 
+.box-text {
+    letter-spacing: 1px;
+}
+
 .text2 {
-    font-size: 1.2em;
+    font-size: 1.3em;
+    color: var(--sub-text-color);
+    line-height: 1.5em;
 }
 
 /* =============================================section3========================================== */
@@ -449,27 +467,32 @@ a {
 .section3-card {
     display: flex;
     gap: 1em;
+    width: 100%;
 }
 
 .section3-card-content {
     width: 100%;
     padding: 4em;
-    width: calc(100% - 16em);
+    width: calc(100% - 4em);
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 1em;
+    gap: 1.5em;
 }
 
 .text-head {
+
     font-weight: 600;
     font-size: 1.5em;
 }
 
 .text-2 {
-    width: 80%;
+
 
     font-size: 1em;
+    font-weight: 600;
+
+    color: var(--sub-text-color);
 }
 
 /*================================== section4======================== */
@@ -493,16 +516,17 @@ a {
 }
 
 .left-part {
-  
+
     display: flex;
     flex-direction: column;
     gap: 2em;
-   
+
 }
-.section4 img{
-  
-   width: 80%;
-   height: 80%;
+
+.section4 img {
+
+    width: 80%;
+    height: 80%;
 
 }
 
@@ -547,28 +571,31 @@ a {
     gap: 2em;
     color: #dbd8d8;
 }
-.card-wrap{
+
+.card-wrap {
     display: flex;
     flex-direction: column;
     gap: 2em;
 }
-.section5-card{
+
+.section5-card {
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
 }
-.section5-card-content{
+
+.section5-card-content {
     display: flex;
     align-items: center;
     gap: 1em;
-    color: rgb(255, 255, 255,0.5);
+    color: rgb(255, 255, 255, 0.5);
     font-size: 1.5em;
     font-weight: 600;
 }
 
 /*=================================section6===================================== */
-.section6{
+.section6 {
     padding: 2em;
     width: calc(90% - 4em);
     margin: auto;
@@ -581,12 +608,14 @@ a {
     align-items: center;
     justify-content: center;
 }
-.section6-card-container{
+
+.section6-card-container {
     display: flex;
     justify-content: space-between;
 
 }
-.step-number{
+
+.step-number {
     width: 60%;
     margin: auto;
     display: flex;
@@ -595,21 +624,25 @@ a {
 
 
 }
-.step-number .no{
+
+.step-number .no {
     font-size: 2em;
 }
-.line{
+
+.line {
     height: 1px;
     background-color: #d2d6d7;
     flex-grow: 1;
 }
-.section6-cards img{
+
+.section6-cards img {
     width: 30%;
     margin: auto;
     height: 60%;
 }
-.section6-cards{
-   width: 100%;
+
+.section6-cards {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -617,24 +650,27 @@ a {
     padding: 2em;
     gap: 1em;
 }
-.section6-cards .heads-text1{
-font-size: 1.5em;
-font-weight: 600;
-color: #ffff;
-width: 80%;
-margin: auto;
+
+.section6-cards .heads-text1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #ffff;
+    width: 80%;
+    margin: auto;
 }
-.section6-cards .heads-text2{
+
+.section6-cards .heads-text2 {
     font-size: 1em;
-    font-weight:600;
+    font-weight: 600;
     color: #c1baba;
     width: 80%;
+    line-height: 1.5;
     margin: auto;
 }
 
 /*================================== section7============================ */
 
-.section7{
+.section7 {
     width: 70%;
     margin: auto;
     display: flex;
@@ -644,13 +680,14 @@ margin: auto;
     color: #ffff;
     gap: 2em;
 }
-.section7 .button2{
-   font-size: 1.5em;
+
+.section7 .button2 {
+    font-size: 1.5em;
 }
 
 
 
-.section8{
+.section8 {
     padding: 2em;
     width: calc(90% - 4em);
     margin: auto;
@@ -660,8 +697,9 @@ margin: auto;
     background: linear-gradient(180deg, #1d2a40, #000000);
     backdrop-filter: blur(10px);
 }
-.section8 .section8-left{
-  
+
+.section8 .section8-left {
+
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -669,85 +707,95 @@ margin: auto;
 
 
 }
-.section8-left .heads-text1{
-font-size: 2em;
-align-items: flex-start;
-justify-content: flex-start;
-font-weight: 900;
+
+.section8-left .heads-text1 {
+    font-size: 2em;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-weight: 900;
 
 }
-.section8-left .heads-text2{
+
+.section8-left .heads-text2 {
     font-size: 1.5em;
     align-items: center;
     color: #c2c5c8f6;
-    
-    }
-    
-.section8-right{
+
+}
+
+.section8-right {
     width: 50%;
     margin: auto;
     display: flex;
-} 
-.section8-right  img{
+}
+
+.section8-right img {
     width: 50%;
-} 
+}
 
 /* ====================footer================= */
 
 
-.footer{
+.footer {
     width: 90%;
     margin: auto;
     margin-bottom: 8em;
     display: flex;
     justify-content: space-between;
 }
-.links-text a{
+
+.links-text a {
     color: #ffffff;
     font-size: 1.5em;
     font-weight: 600;
 }
 
-.footer-right,.footer-left{
+.footer-right,
+.footer-left {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
 }
-.footer-h1{
+
+.footer-h1 {
     color: #ffffff;
 }
 
-.links-text{
+.links-text {
     display: flex;
     gap: 4em;
 }
-.links-icons{
+
+.links-icons {
     display: flex;
-color: #ffffff;
-justify-content: end;
-gap: 1em;
+    color: #ffffff;
+    justify-content: end;
+    gap: 1em;
 }
 
 
 /* Hide links in mobile view when screen width is less than 1200px */
 
-@media (max-width: 1525px){
-    .section1 .cards{
-       
+@media (max-width: 1525px) {
+    .section1 .cards {
+
         padding: 1em;
         width: calc(100% - 2em);
     }
+
     .section1-card img {
         width: 100%;
         height: 30vh;
     }
-   
+
 
 }
+
 @media (max-width: 1200px) {
     .links {
         display: none;
     }
+
     .section1-card img {
         width: 100%;
         height: 25vh;
@@ -757,27 +805,34 @@ gap: 1em;
         display: flex;
     }
 
-    .section3-card .section3-card-content{
+    .section3-card .section3-card-content {
         padding: 1em;
         width: calc(100% - 2em);
-        
+
     }
-    .card-details{
+
+    .card-details {
         align-items: center;
     }
-    .section4{
+
+    .section4 {
         flex-direction: column;
     }
-    .section1 .cards{
+
+    .section1 .cards {
         flex-direction: column;
     }
-    .text1{
+
+    .text1 {
         font-size: 1.5em;
     }
-    .text2{
+
+    .text2 {
         font-size: 1em;
     }
-    .cards-list-left,.cards-list-right{
+
+    .cards-list-left,
+    .cards-list-right {
         gap: 2em;
     }
 
@@ -788,17 +843,20 @@ gap: 1em;
 
 
 @media screen and (max-width: 768px) {
-    .nav{
+    .nav {
         padding: 2em;
         width: calc(100% - 4em);
     }
+
     .hero-section {
         flex-direction: column-reverse;
         justify-content: center;
         gap: 4em;
+        align-items: center;
     }
 
     .left {
+        width: 100%;
         align-items: center;
     }
 
@@ -809,6 +867,10 @@ gap: 1em;
 
     .left h4 {
         text-align: center;
+    }
+
+    .right {
+        width: 100%;
     }
 
     .two-button {
@@ -834,6 +896,10 @@ gap: 1em;
 
     .cards {
         flex-direction: column;
+    }
+
+    .head-elem {
+        padding: 0em;
     }
 
     .left {
@@ -864,9 +930,10 @@ gap: 1em;
 
     .card-details {
         align-items: center;
-       
+
+
     }
-    
+
 
     .section-h1,
     .section4 h1 {
@@ -892,7 +959,8 @@ gap: 1em;
         padding: 0;
         gap: 1em;
     }
-    .bottom-elem{
+
+    .bottom-elem {
         width: 100%;
     }
 
@@ -904,6 +972,7 @@ gap: 1em;
     .text1 {
         width: 100%;
         font-size: 1.8em;
+
     }
 
     .heading-2,
@@ -932,7 +1001,8 @@ gap: 1em;
         margin-bottom: 1em;
 
     }
-     .section3-card{
+
+    .section3-card {
         flex-direction: column;
     }
 
@@ -955,76 +1025,86 @@ gap: 1em;
         flex-wrap: nowrap;
         width: 100%;
     }
-   .section5{
-    width: calc(80% - 4em);
-    text-align: center;
-   }
-    .card-wrap{
+
+    .section5 {
+        width: calc(80% - 4em);
+        text-align: center;
+    }
+
+    .card-wrap {
         gap: 1em;
     }
-    .section5-card{
+
+    .section5-card {
         flex-direction: column;
         align-items: center;
         text-align: center;
         gap: 2em;
-       
-       
+
+
     }
-    .section6{
+
+    .section6 {
         text-align: center;
     }
-    .section6 h2{
+
+    .section6 h2 {
         font-size: 1.2em;
     }
-    
-    .step-number .no{
+
+    .step-number .no {
         font-size: 1.2em;
     }
-    .section6-card-container{
+
+    .section6-card-container {
         flex-direction: column;
         align-items: center;
     }
-    .section7 .button2{
+
+    .section7 .button2 {
         font-size: 1em;
     }
 
-    .section8{
+    .section8 {
         flex-direction: column;
         gap: 2em;
     }
-    .section8-left .heads-text1{
-        font-size: 1.2em;
-      
-        
-        }
-        .section8-left .heads-text2{
-            font-size: 1em;
-          
-        }
-        .section8-right{
-            width: 100%;
-            margin: auto;
-           
-        }
 
-        .footer{
-            flex-direction: column;
-            gap: 2em;
-            margin-bottom: 4em;
-          
-        }
-        .footer-right{
-            gap: 2em;
-        }
-        .links-text{
-            gap: 1em;
-            font-size: 0.7em;
-        }
-      
-   
+    .section8-left .heads-text1 {
+        font-size: 1.2em;
+
+
+    }
+
+    .section8-left .heads-text2 {
+        font-size: 1em;
+
+    }
+
+    .section8-right {
+        width: 100%;
+        margin: auto;
+
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 2em;
+        margin-bottom: 4em;
+
+    }
+
+    .footer-right {
+        gap: 2em;
+    }
+
+    .links-text {
+        gap: 1em;
+        font-size: 0.7em;
+    }
+
+
 
 
 
 }
-
-
