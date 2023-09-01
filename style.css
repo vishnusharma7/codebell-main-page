@@ -168,6 +168,9 @@ a {
 }
 
 
+  
+
+
 .right {
     width: 50%;
     display: flex;
@@ -601,7 +604,7 @@ a {
     margin: auto;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(90deg, #193149, #150f08);
+    background: linear-gradient(320deg, #193149, #150f08);
     backdrop-filter: blur(10px);
     gap: 2em;
     color: var(--text-color);
