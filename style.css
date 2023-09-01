@@ -87,6 +87,10 @@ a {
     font-weight: 700;
     color: #ffffff;
     white-space: nowrap;
+    transition: 0.5s;
+}
+.links a:hover{
+    transform: translateY(-5px);
 }
 
 .get-the-app {
@@ -100,8 +104,11 @@ a {
     border: 0.5px solid #ffff;
     cursor: pointer;
     white-space: nowrap;
+    transition: 0.5s;
 }
-
+.get-the-app:hover{
+    transform: translateY(-5px);
+}
 .hero-section {
     width: 85%;
     margin: auto;
@@ -152,6 +159,7 @@ a {
     cursor: pointer;
     white-space: nowrap;
     font-weight: 700;
+    transition:  0.5s;
 }
 
 .button2 {
@@ -165,7 +173,12 @@ a {
     cursor: pointer;
     white-space: nowrap;
     font-weight: 700;
+    transition:  0.5s;
 }
+.button1:hover, .button2:hover {
+    transform: scale(1.09); /* Increase size on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+  }
 
 
   
