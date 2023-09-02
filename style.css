@@ -150,6 +150,8 @@ a {
     font-weight: 900;
     font-size: 4em;
     color: var(--text-color);
+  
+   
 
 }
 
@@ -212,10 +214,28 @@ a {
 .right img {
 
     width: 70%;
-
-
-
+    animation: moveUpAndDown 4s ease-in-out infinite; /* Adjust the animation duration and easing as needed */
 }
+
+/* Define the animation */
+@keyframes moveUpAndDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px); /* Adjust the distance you want the image to move */
+    }
+  }
+  
+
+
+
+  
+  
+
+ 
+  
+
 
 /* CSS for the changing text animation */
 @keyframes changeText {
@@ -243,6 +263,7 @@ a {
   
   #changing-text {
     display: inline-block;
+    color: #1585daf6;
     animation: changeText 8s infinite; /* Adjust the duration as needed */
   }
   
@@ -399,6 +420,29 @@ a {
     white-space: nowrap;
     font-weight: 900;
     font-size: 0.8em;
+}
+
+/* Define the animation class */
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Initially hide the card */
+.card-details {
+    opacity: 0;
+}
+
+/* Apply the animation class to the card */
+.card-details.animate {
+    animation: slideInFromTop 0.5s ease-in-out;
+    opacity: 1;
 }
 
 /* ===========================section2================== */

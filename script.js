@@ -55,5 +55,34 @@ document.addEventListener('DOMContentLoaded', function () {
     currentIndex = (currentIndex + 1) % texts.length;
   }
 
-  setInterval(changeText, 3000); // Change text every second
+  setInterval(changeText, 8000); // Change text every second
 
+
+// Function to add the "animate" class to cards one by one when they are in the viewport
+function animateCardsSequentially(entries, observer) {
+  let delay = 0;
+
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.classList.add('animate');
+      }, delay);
+      delay += 200; // Adjust the delay as needed
+    }
+  });
+}
+
+// Create an Intersection Observer
+const cardObserver = new IntersectionObserver(animateCardsSequentially, {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.2, // Adjust the threshold as needed
+});
+
+// Get the cards
+const cards = document.querySelectorAll('.card-details');
+
+// Observe each card element
+cards.forEach((card) => {
+  cardObserver.observe(card);
+});
