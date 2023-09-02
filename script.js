@@ -30,12 +30,30 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
 
-    // Calculate the opacity and blur values based on the scroll position
     const opacity = Math.min(0.8, scrollY / 200); // Adjust 200 to control when the effect starts
-    const blur = Math.min(5, scrollY / 10); // Adjust 10 to control the blur intensity
+    const blur = Math.min(5, scrollY / 10); 
 
-    // Apply the updated styles to the navbar
+   
     nav.style.backgroundColor = `rgba(255, 255, 255, ${0})`;
     nav.style.backdropFilter = `blur(${20}px)`;
   });
+
+
+
+  
+
+  const changingText = document.getElementById('changing-text');
+  const texts = [
+    'No more missed Visitor',
+    'Stay in touch with your neighbours',
+    'Eliminate fake delivery attempts',
+  ];
+  let currentIndex = 0;
+
+  function changeText() {
+    changingText.textContent = texts[currentIndex];
+    currentIndex = (currentIndex + 1) % texts.length;
+  }
+
+  setInterval(changeText, 3000); // Change text every second
 

@@ -217,6 +217,42 @@ a {
 
 }
 
+/* CSS for the changing text animation */
+@keyframes changeText {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    25% {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    75% {
+      opacity: 0;
+      transform: translateX(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  #changing-text {
+    display: inline-block;
+    animation: changeText 8s infinite; /* Adjust the duration as needed */
+  }
+  
+  /* CSS for the changing text */
+
+  
+
+
+
+
 /* menu-hide-top-right */
 .menu-popup {
     display: none;
