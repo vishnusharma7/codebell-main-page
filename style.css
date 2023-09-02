@@ -50,10 +50,15 @@ body {
 }
 
 .hero {
+    display: flex;
     width: 100%;
+    /* height: calc(100vh - 107.2px); */
     height: 100vh;
     background: linear-gradient(135deg, #000000, rgba(13, 42, 91, 0.951));
     backdrop-filter: blur(10px);
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
 }
 
 a {
@@ -63,13 +68,26 @@ a {
 
 /* =========================================Navbar============================== */
 .nav {
+    position: fixed;
+    margin: auto;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+   
+    height: 6em;
+    top: 0;
+    z-index: 999;
+   
+}
+.nav-content{
+
     width: 85%;
     margin: auto;
-    padding: 4em 0;
-    display: flex;
     align-items: center;
     justify-content: space-between;
+    display: flex;
 }
+
 
 .links {
     display: flex;
@@ -808,6 +826,9 @@ a {
 }
 
 @media (max-width: 1200px) {
+    .nav{
+        height: 5em;
+    }
     .links {
         display: none;
     }
@@ -860,8 +881,7 @@ a {
 
 @media screen and (max-width: 768px) {
     .nav {
-        padding: 2em;
-        width: calc(100% - 4em);
+       
     }
 
     .hero-section {
