@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-  
+  //=================================heading text animation==========================
   const changingText = document.getElementById('changing-text');
   const texts = [
       'No more missed Visitor',
@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   // ============================section 2 card animation======================
+  
 // Function to add the "animate" class to cards one by one when they are in the viewport
 function animateCardsSequentially(entries, observer) {
   let delay = 0;
