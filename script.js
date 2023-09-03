@@ -41,23 +41,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   
-
   const changingText = document.getElementById('changing-text');
   const texts = [
-    'No more missed Visitor',
-    'Stay in touch with your neighbours',
-    'Eliminate fake delivery attempts',
+      'No more missed Visitor',
+      'Stay in touch with your neighbours',
+      'Eliminate fake delivery attempts',
   ];
   let currentIndex = 0;
 
   function changeText() {
-    changingText.textContent = texts[currentIndex];
-    currentIndex = (currentIndex + 1) % texts.length;
+      changingText.textContent = texts[currentIndex];
+      currentIndex = (currentIndex + 1) % texts.length;
   }
 
-  setInterval(changeText, 8000); // Change text every second
+  changeText(); // Initial text change
+
+  let intervalId = setInterval(changeText, 5000);
 
 
+  // ============================section 2 card animation======================
 // Function to add the "animate" class to cards one by one when they are in the viewport
 function animateCardsSequentially(entries, observer) {
   let delay = 0;

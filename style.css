@@ -240,33 +240,28 @@ a {
 /* CSS for the changing text animation */
 @keyframes changeText {
     0% {
-      opacity: 1;
-      transform: translateX(0);
+        opacity: 0;
+        transform: translateX(-10px);
     }
-    25% {
-      opacity: 0;
-      transform: translateX(-10px);
+    10% {
+        opacity: 1;
+        transform: translateX(0);
     }
-    50% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    75% {
-      opacity: 0;
-      transform: translateX(10px);
+    90% {
+        opacity: 1;
+        transform: translateX(0);
     }
     100% {
-      opacity: 1;
-      transform: translateX(0);
+        opacity: 0;
+        transform: translateX(10px);
     }
-  }
-  
-  #changing-text {
+}
+
+#changing-text {
     display: inline-block;
     color: #1585daf6;
-    animation: changeText 8s infinite; /* Adjust the duration as needed */
-  }
-  
+    animation: changeText 5s infinite;
+}
   /* CSS for the changing text */
 
   
