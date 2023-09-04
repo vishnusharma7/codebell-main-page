@@ -1159,3 +1159,17 @@ a {
     }
 
 }
+
+
+/* Define initial styles for section6-cards */
+.section6-cards {
+    opacity: 0;
+    transform: translateY(-50px); /* Move up initially */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .animate {
+    opacity: 1;
+    transform: translateY(0); /* Move to the original position */
+  }
+  

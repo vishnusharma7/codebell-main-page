@@ -89,3 +89,36 @@ const cards = document.querySelectorAll('.card-details');
 cards.forEach((card) => {
   cardObserver.observe(card);
 });
+
+
+  // ============================section 6 card animation======================
+
+// Function to check if an element is in the viewport
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// Function to animate elements sequentially when they enter the viewport
+function animateSection6Cards() {
+  const section6Cards = document.querySelectorAll('.section6-cards');
+
+  section6Cards.forEach((card, index) => {
+    if (isElementInViewport(card)) {
+      setTimeout(() => {
+        card.classList.add('animate');
+      }, index * 200); // Adjust the delay as needed (200ms delay between each card)
+    }
+  });
+}
+
+// Add a scroll event listener to trigger the animations
+window.addEventListener('scroll', animateSection6Cards);
+
+// Initially, trigger the animations for elements in the viewport when the page loads
+animateSection6Cards();
