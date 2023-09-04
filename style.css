@@ -793,7 +793,12 @@ a {
 
 .section8-right img {
     width: 50%;
+    transition: all ease 0.5s;
+    cursor: pointer;;
 }
+.section8-right img:hover {
+    transform: scale(1.09); /* Increase size on hover */
+  }
 
 /* ====================footer================= */
 
@@ -808,8 +813,13 @@ a {
 
 .links-text a {
     color: #ffffff;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: 600;
+    transition: all ease 2s;
+
+}
+.links-text a:hover{
+text-decoration: underline;
 }
 
 .footer-right,
@@ -828,11 +838,20 @@ a {
     gap: 4em;
 }
 
+
 .links-icons {
     display: flex;
     color: #ffffff;
     justify-content: end;
-    gap: 1em;
+    gap: 1.5em;
+}
+.links-icons svg{
+    transition: all ease 0.5s;
+}
+.links-icons svg:hover{
+    box-shadow: 2px 5px 50px rgb(0, 204, 255,0.5);
+    transform: scale(1.09); /* Increase size on hover */
+
 }
 
 
