@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,700&family=Inter:wght@100;700;800&family=Mukta:wght@200;300;400;500&family=Open+Sans:ital@1&family=Poppins:wght@100;200;300;400;500;600&family=Rubik:wght@300;400;500&family=Ubuntu:wght@300&display=swap');
-
-
 * {
     margin: 0;
     padding: 0;
@@ -23,12 +21,10 @@ body {
     width: 5px;
 }
 
-
 ::-webkit-scrollbar-thumb {
     background-color: #85818a;
     border-radius: 5px;
 }
-
 
 ::-webkit-scrollbar-track {
     background-color: #f0f0f0;
@@ -150,8 +146,6 @@ a {
     font-weight: 900;
     font-size: 4em;
     color: var(--text-color);
-  
-   
 
 }
 
@@ -197,13 +191,10 @@ a {
 }
 .button1:hover, .button2:hover {
     transform: scale(1.09); /* Increase size on hover */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+    box-shadow: 0 5px 50px rgba(16, 138, 200, 0.1); /* Add a subtle shadow on hover */
   }
 
-
   
-
-
 .right {
     width: 50%;
     display: flex;
@@ -226,14 +217,6 @@ a {
       transform: translateY(-20px); /* Adjust the distance you want the image to move */
     }
   }
-  
-
-
-
-  
-  
-
- 
   
 
 
@@ -262,11 +245,6 @@ a {
     color: #1585daf6;
     animation: changeText 5s infinite;
 }
-  /* CSS for the changing text */
-
-  
-
-
 
 
 /* menu-hide-top-right */
@@ -385,9 +363,6 @@ a {
     font-weight: 700;
     color: var(--text-color);
     margin: auto;
-
-
-
 }
 
 .heading-2 {
@@ -453,7 +428,6 @@ a {
     align-items: center;
     color: var(--text-color);
     gap: 2em;
-
 }
 
 .card-list-container {
@@ -495,29 +469,11 @@ a {
     gap: 2em;
     align-items: flex-start;
     justify-content: flex-start;
-
-
-
 }
 
-
-
-.cards-list-right img {
+.cards-list-right img, .cards-list-left img {
     width: 40%;
     margin-top: -4em;
-
-   
-
-
-}
-
-.cards-list-left img {
-
-    width: 40%;
-    margin-top: -4em;
-
-   
-  
 
 }
 
@@ -527,7 +483,6 @@ a {
     gap: 0.5em;
     align-items: flex-start;
 }
-
 .text1 {
     font-weight: 900;
     font-size: 2.5em;
@@ -535,7 +490,6 @@ a {
     margin-bottom: 0.4em;
 
 }
-
 
 .head-elem {
     width: 100% auto;
@@ -549,8 +503,6 @@ a {
     gap: 1em;
     padding: 0.3em 1.2em;
     margin-bottom: 2.7em;
-
-
 }
 
 .box-text {
@@ -603,11 +555,8 @@ a {
 }
 
 .text-2 {
-
-
     font-size: 1em;
     font-weight: 600;
-
     color: var(--sub-text-color);
 }
 
@@ -670,7 +619,6 @@ a {
 
 .left-part h4 span {
     color: var(--sub-text-color);
-
 }
 
 /* ===============================section5================== */
@@ -727,7 +675,6 @@ a {
 .section6-card-container {
     display: flex;
     justify-content: space-between;
-
 }
 
 .step-number {
@@ -736,8 +683,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .step-number .no {
@@ -955,15 +900,10 @@ a {
     }
 
 
-
-
 }
 
 
 @media screen and (max-width: 768px) {
-    .nav {
-       
-    }
 
     .hero-section {
         flex-direction: column-reverse;
@@ -1048,14 +988,9 @@ a {
         margin-top: 0;
         width: 70%;
     }
-
     .card-details {
         align-items: center;
-
-
     }
-
-
     .section-h1,
     .section4 h1 {
         font-size: 2.1em;
@@ -1125,11 +1060,9 @@ a {
         margin-bottom: 1em;
 
     }
-
     .section3-card {
         flex-direction: column;
     }
-
     .section3-card-content {
         padding: 1em;
         width: calc(100% - 2em);
@@ -1149,16 +1082,13 @@ a {
         flex-wrap: nowrap;
         width: 100%;
     }
-
     .section5 {
         width: calc(80% - 4em);
         text-align: center;
     }
-
     .card-wrap {
         gap: 1em;
     }
-
     .section5-card {
         flex-direction: column;
         align-items: flex-start;
@@ -1167,8 +1097,6 @@ a {
         justify-content: center;
         font-size: 0.8em;
         margin: auto;
-
-
     }
 
     .section6 {
@@ -1229,9 +1157,5 @@ a {
         gap: 1em;
         font-size: 0.7em;
     }
-
-
-
-
 
 }
